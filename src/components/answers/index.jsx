@@ -6,7 +6,8 @@ function Answers (props) {
     const answers = [{
         id: "notAtAll",
         value: 0,
-        text: "Not at all"
+        text: "Not at all",
+        defaultChecked: true
     },{
         id: "severalDays",
         value: 1,
@@ -26,7 +27,9 @@ function Answers (props) {
                         id={`${props.questionId}-${answer.id}`} 
                         questionId = {props.questionId}
                         value={answer.value} 
-                        text={answer.text}/>;
+                        text={answer.text}
+                        defaultChecked={answer.defaultChecked}
+                        onChange={props.onChange} />;
     };
 
     return (
