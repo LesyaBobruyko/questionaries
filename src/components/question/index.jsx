@@ -4,10 +4,10 @@ import "./index.css";
 
 const Question = (props) => {
   return (
-    <fieldset>
-      <legend>{props.questionText}</legend>
+    <div className="question">
+      <label className="questionText">{props.questionText}</label>
       <Answers questionId={props.id} onChange={props.onChange} />
-    </fieldset>
+    </div>
   );
 };
 

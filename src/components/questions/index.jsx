@@ -54,7 +54,7 @@ const Questions = () => {
   };
 
   return (
-    <div>
+    <div className="questionnaire">
       <h1>PHQ-9 (Patient Health Questionnaire-9)</h1>
       <h2>
         How often have you been bothering by the following over the past 2

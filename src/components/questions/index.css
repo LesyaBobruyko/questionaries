@@ -1,0 +1,8 @@
+h1, h2 {
+    text-align: center;
+}
+
+.questionnaire {
+    max-width: 610px;
+    margin: 0 auto;
+}

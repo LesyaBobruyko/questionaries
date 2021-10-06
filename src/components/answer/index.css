@@ -1,0 +1,5 @@
+.answer:hover,
+.answer:checked {
+    background: rgb(27, 177, 147);
+    color: #fff;
+}

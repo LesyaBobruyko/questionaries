@@ -3,7 +3,7 @@ import "./index.css";
 
 const Answer = (props) => {
   return (
-    <label htmlFor={props.id}>
+    <label className="answer" htmlFor={props.id}>
       <input
         type="radio"
         id={props.id}
@@ -12,7 +12,7 @@ const Answer = (props) => {
         defaultChecked={props.defaultChecked}
         onChange={() => props.onChange(props.value, props.questionId)}
       />
-      {props.text} <br />
+      {props.text}
     </label>
   );
 };

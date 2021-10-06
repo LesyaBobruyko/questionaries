@@ -1,0 +1,7 @@
+.question {
+    display: flex; 
+}
+
+.questionText {
+    flex: 1 1 0;
+}
