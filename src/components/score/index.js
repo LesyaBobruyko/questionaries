@@ -5,7 +5,7 @@ const Score = (props) => {
   const score = props.score;
 
   return (
-    <div>
+    <div className="score">
       <p>{score}</p>
       {score <= 4 && (
         <>

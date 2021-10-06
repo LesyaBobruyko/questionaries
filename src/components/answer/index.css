@@ -1,5 +1,20 @@
-.answer:hover,
-.answer:checked {
+.answer {
+    border-bottom: 1px solid rgb(192, 192, 192);
+    display: inline;
+    padding: 10px;
+    font-size: 14.5px;
+    line-height: 20px;
+}
+
+.answer:hover {
+    background-color: #d7d7d7;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .answer {
     background: rgb(27, 177, 147);
     color: #fff;
 }
