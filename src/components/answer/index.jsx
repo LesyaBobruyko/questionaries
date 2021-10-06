@@ -12,7 +12,7 @@ const Answer = (props) => {
         defaultChecked={props.defaultChecked}
         onChange={() => props.onChange(props.value, props.questionId)}
       />
-      <label className="answer" htmlFor={props.id}>{props.text}</label>
+      <label className="answer" htmlFor={props.id}>{props.text} <span className="answerValue">{(props.value) ? '+' : ''}{props.value}</span></label>
     </>
   );
 };
