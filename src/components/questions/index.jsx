@@ -55,11 +55,11 @@ const Questions = () => {
 
   return (
     <div className="questionnaire">
-      <h1>PHQ-9 (Patient Health Questionnaire-9)</h1>
-      <h2>
+      <h2 className="questionnaryName">PHQ-9 (Patient Health Questionnaire-9)</h2>
+      <p>
         How often have you been bothering by the following over the past 2
         weeks?
-      </h2>
+      </p>
       {questions.map((question) => renderQuestion(question))}
       <Score score={score} />
     </div>

@@ -1,0 +1,22 @@
+.score {
+    background: rgb(17, 125, 103);
+    color: #fff;
+    padding: 3px 15px;
+    box-shadow: 0 -1.5px 4px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+.scoreValue {
+    margin-top: 5px;
+}
+
+.scoreValue > span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.scoreComments {
+    font-size: 14.5px;
+    line-height: 20px;
+    font-weight: 300;
+}
