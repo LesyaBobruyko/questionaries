@@ -6,7 +6,7 @@ const Question = (props) => {
   return (
     <div className="question">
       <label className="questionText">{props.questionText}</label>
-      <Answers questionId={props.id} onChange={props.onChange} />
+      <Answers questionId={props.id} answers={props.answers} onChange={props.onChange} />
     </div>
   );
 };
