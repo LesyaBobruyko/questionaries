@@ -4,11 +4,12 @@ import Score from "../score";
 import "./index.css";
 
 const Questions = (props) => {
-  const [results, setResults] = useState({});
-  const score = Object.values(results).reduce((a, b) => a + b, 0);
+  const [scores, setScores] = useState({});
+  const score = Object.values(scores).reduce((a, b) => a + b, 0);
+  const data = props.data;
 
   const handleChange = (value, questionId) => {
-    setResults({ ...results, [questionId]: value || 0 });
+    setScores({ ...scores, [questionId]: value || 0 });
   };
 
   const renderQuestion = (question) => {
@@ -36,8 +37,8 @@ const Questions = (props) => {
         How often have you been bothering by the following over the past 2
         weeks?
       </p>
-      {props.questions.map((question) => renderQuestion(question))}
-      <Score score={score} />
+      {data.questions.map((question) => renderQuestion(question))}
+      <Score score={score} results={data.results}/>
     </div>
   );
 };
