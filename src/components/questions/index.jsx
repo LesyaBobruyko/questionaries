@@ -30,13 +30,9 @@ const Questions = (props) => {
 
   return (
     <div className="questionnaire">
-      <h2 className="questionnaryName">
-        PHQ-9 (Patient Health Questionnaire-9)
-      </h2>
-      <p>
-        How often have you been bothering by the following over the past 2
-        weeks?
-      </p>
+      <h2 className="questionnaireName">{data.questionnaireName}</h2>
+      <p className="description">{data.description}</p>
+      <p className="instruction">{data.instruction}</p>
       {data.questions.map((question) => renderQuestion(question))}
       <Score score={score} results={data.results}/>
     </div>
